@@ -1,0 +1,42 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="chat-container;">
+<div style="text-align:center;background-color: #7815ba;height:max-content;">
+
+<!-- <form>
+<input #input type="text" value="">
+<input type="submit" value="submit">
+</form> -->
+<div style="text-align:center;">
+    <h1 style="color: teal;font-family:Georgia, 'Times New Roman', Times, serif;
+    padding:2px 2px;border:1px solid black;background-color: yellow;">
+     Comment in Succour !
+      <!-- {{title}} -->
+    </h1>
+    
+      <div class="chat">
+        <div class="message"></div>
+      </div>
+    </div>
+  
+  <!-- <div class="footer"> -->
+    <div class="send-button">
+            <form (keyup.enter)="sendMessage(input.value)">
+                    <input  id="input" type="text" #input>
+      <div class="send" (click)="sendMessage(input.value)"><button type="submit" value="submit" style="height: 30px;width:60px;">submit</button></div>
+      </form>
+     </div>
+
+    <!-- or we can use keydown -->
+    <!-- <form (keydown)="keyDownFunction($event)">
+        <input id="input" type="text" #input/>
+    </form> -->
+<!-- </div> -->
+
+    
+</div>  
+
+  
+  </div>
+  
+  
+<router-outlet></router-outlet>
